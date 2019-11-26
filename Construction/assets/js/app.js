@@ -7,7 +7,26 @@ function openNav() {
 	document.getElementById("mySidenav").style.width = "0";
   }
 
+
 /* DROPDOWNM MOBILE */
+
+
+$("#homeBtn").click(function() {
+    $("#subMenuHome").slideToggle(400,'linear');
+  });
+
+$("#OurTeamBtn").click(function() {
+    $("#subMenuTeam").slideToggle(400,'linear');
+  });
+
+$("#servicesBtn").click(function() {
+  $("#subMenuServices").slideToggle(400,'linear');
+  });
+
+
+$("#blogBtn").click(function() {
+  $("#subMenuBlog").slideToggle(400,'linear');
+  });
 
 
 
