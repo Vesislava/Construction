@@ -18,15 +18,15 @@
     background-color: #f8f8f8;
     overflow-x: hidden;
     transition: 0.5s;
-
   }
   
   .sidenav a {
-    padding: 8px 8px 8px 15px;
+    padding: 9px 8px 8px 15px;
     text-decoration: none;
     font-size: 25px;
     color: #fff;
     display: block;
+
 }
 
 .sidenav a.closebtn {
@@ -63,32 +63,78 @@ span.open-mb-menu {
     
 }
 /* DROPDOWN MENU MOBILE */
-ul.mobileMenu {
-    background-color: #1b273d;;
 
+button.dropdown-btn-mb:focus {
+    outline: none;
 }
 
-ul.mobileMenu li a.bigMenu {
-    border-bottom: 1px solid #A6A6A6;
-    border-top: 1px solid #A6A6A6;
-     color: white;
+.dropdown-btn-mb span  {
+    float: left;
+    padding-left: 25px;;
 }
 
-ul.mobileMenu li a.bigMenu:hover {
-    color: #ffb600;
-    transition: 0.5s ease;
+#mb-contact {
+    font-size: 18px;
+    padding: 0;
+    padding-left: 25px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    color: white;
+    background-color: #1b273d;
+    border-bottom:1px solid #4f6ea8;
 }
 
-.dropdown-container a.down-container {
-    padding-left: 55px;
+#mb-contact:hover {
+    color:#ffb600;
+    transition: 0.3s;
+}
+.dropdown-btn-mb {
+    width: 100%;
+   	border-left: 0;
+   	border-right: 0;
+   	border-top: 0;
+    outline: none;
+    padding: 10px 0 10px 0;
     background-color: #1b273d;
     color: white;
+    font-size: 18px;
 }
+ul.dopDownUl {
+background-color: #1b273d;
+}
+.dropdown-btn-mb:hover {
+    color:#ffb600;
+    transition: 1.2s;
+}
+.main {
+    margin-left: 200px; 
+    font-size: 20px; 
+    padding: 0px 10px;
+  }
+.active {
+    color: white;
+  }
+.dropdown-container {
+	display: none;
+    background-color: #1b273d;
+    
+  }
+  .dropdown-container a.down-container:last-of-type{
+    border-bottom:1px solid grey;
+  }
+  .dropdown-container a.down-container {
+      border-top:1px solid grey;
+      padding-left: 88px;
+      color: white;
+      font-size: 17px;
+  }
 
 .dropdown-container a.down-container:hover {
+    color:white;
+    transition: 1.2s;
     background-color: #ffb600;
-     transition: 1.5s ease; 
 }
+
 
 body {  
     font-family: 'poppinsregular';
@@ -251,11 +297,11 @@ button.quote {
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ffb600;}
+  .dropdown-content a:hover {background-color: #ffb600;transition: 1.2s	}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {color: #ffb600;}
+  .dropdown:hover .dropbtn {color: #ffb600; transition: 1.2s;}
   
   a.menu-contact {
       text-decoration: none;
